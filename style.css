@@ -71,7 +71,7 @@ button{font:inherit;font-weight:700;cursor:pointer}
 
 /* popups */
 .leaflet-popup-content-wrapper{border-radius:12px;padding:0;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.3)}
-.leaflet-popup-content{margin:0;width:240px!important}
+.leaflet-popup-content{margin:0;width:min(240px,70vw)!important}
 .pop{padding:.75rem .95rem;font-family:'Inter',sans-serif;color:var(--ink)}
 .pop h3{font-size:1rem;font-weight:800;margin-bottom:.3rem}
 .badge{display:inline-block;padding:.05rem .6rem;border-radius:999px;background:var(--c);color:#fff;font-size:.7rem;font-weight:700;margin-bottom:.5rem}
@@ -108,11 +108,19 @@ button{font:inherit;font-weight:700;cursor:pointer}
   .panel-btn{display:block}
   .brand h1{font-size:1.05rem}
   .brand p{display:none}
-  .layout{display:block;position:relative}
+  .layout{display:block;position:relative;overflow:hidden}
   .map-wrap{position:absolute;inset:0}
-  .panel{position:absolute;z-index:1000;top:0;left:0;right:0;max-height:80%;transform:translateY(-105%);transition:transform .3s;border-right:0;border-bottom:3px solid var(--teal);box-shadow:0 12px 24px rgba(0,0,0,.25)}
-  .panel.open{transform:none}
+  .panel{position:absolute;z-index:1000;top:0;left:0;right:0;max-height:80%;transform:translateY(-105%);visibility:hidden;transition:transform .3s,visibility .3s;border-right:0;border-bottom:3px solid var(--teal);box-shadow:0 12px 24px rgba(0,0,0,.25)}
+  .panel.open{transform:none;visibility:visible}
   .app-footer{justify-content:center;text-align:center}
   .app-footer span:nth-child(n+2){display:none}
 }
+@media (max-width:480px){
+  .app-header{padding:.5rem .7rem;gap:.5rem}
+  .logo{display:none}
+  .brand h1{font-size:.95rem}
+  .student b{font-size:.75rem}
+  .app-footer{padding:.4rem .7rem}
+}
+@media (max-height:500px){.app-footer{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}

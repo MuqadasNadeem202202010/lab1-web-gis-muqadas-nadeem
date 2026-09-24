@@ -46,10 +46,14 @@
   map.on('zoomend', zoomClass); zoomClass();
 
   // Live coordinates
-  map.on('mousemove', e => { $('#coords').textContent = `Lat ${e.latlng.lat.toFixed(4)}  |  Lon ${e.latlng.lng.toFixed(4)}  |  Zoom ${map.getZoom()}`; });
+  map.on('mousemove click', e => { $('#coords').textContent = `Lat ${e.latlng.lat.toFixed(4)}  |  Lon ${e.latlng.lng.toFixed(4)}  |  Zoom ${map.getZoom()}`; });
+
+  // Keep the map correct when the window is resized or the phone is rotated
+  window.addEventListener('resize', () => map.invalidateSize());
 
   // Mobile panel button
   $('#panelBtn').onclick = () => $('#panel').classList.toggle('open');
+  map.on('click', () => $('#panel').classList.remove('open'));
 
   const INFO_DEFAULT = $('#info').innerHTML;
   const showInfo = html => { $('#info').innerHTML = html; };
