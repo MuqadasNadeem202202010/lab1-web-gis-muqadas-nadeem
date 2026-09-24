@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web GIS of Pakistan | Lab Assignment 1 | Muqadas Nadeem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <button class="panel-btn" id="panelBtn" aria-label="Open or close the panel">Panel</button>
+    <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+    <div class="brand">
+      <h1>Web GIS of Pakistan</h1>
+      <p>Cities and weather stations · Lab Assignment 1 · MET418 Web GIS Application</p>
+    </div>
+    <div class="student"><b>Muqadas Nadeem</b><span>BS Remote Sensing and GIS · COMSATS University Islamabad</span></div>
+  </header>
+
+  <div class="layout">
+    <aside class="panel" id="panel">
+      <div class="stats">
+        <div><b id="nCities">0</b><span>Cities</span></div>
+        <div><b id="nStations">0</b><span>Weather stations</span></div>
+        <div><b id="avgTemp">n/a</b><span>Avg. temperature</span></div>
+      </div>
+
+      <section class="step">
+        <h2><span class="num">1</span>Search a city</h2>
+        <form id="searchForm" autocomplete="off">
+          <input id="search" list="cityList" placeholder="e.g. Lahore" aria-label="Search city">
+          <datalist id="cityList"></datalist>
+          <button type="submit">Go</button>
+        </form>
+        <p class="hint" id="hint"></p>
+      </section>
+
+      <section class="step">
+        <h2><span class="num">2</span>Filter by province</h2>
+        <select id="province" aria-label="Filter by province"><option value="">All provinces and regions</option></select>
+        <button class="reset" id="reset" type="button">Reset view</button>
+      </section>
+
+      <section class="step">
+        <h2><span class="num">3</span>Selected feature</h2>
+        <div class="info" id="info">Click a city or a weather station on the map to see its details here.</div>
+      </section>
+
+      <section class="step">
+        <h2><span class="num">4</span>Legend</h2>
+        <h3>Cities</h3>
+        <ul class="legend" id="cityLegend"></ul>
+        <h3>Weather stations (temperature)</h3>
+        <ul class="legend two" id="tempLegend"></ul>
+      </section>
+    </aside>
+
+    <section class="map-wrap">
+      <div id="map"></div>
+      <div class="coords" id="coords">Move the mouse over the map</div>
+      <div class="error" id="error" hidden>The data files could not be loaded. Open this project with Live Server, not by double-clicking index.html.</div>
+    </section>
+  </div>
+
+  <footer class="app-footer">
+    <span>© 2026 Muqadas Nadeem · BS Remote Sensing and GIS, COMSATS University Islamabad</span>
+    <span>MET418 Web GIS Application · Lab Assignment 1 · Dr. Farooq Buzdar</span>
+    <span>Basemaps: OpenStreetMap, Esri · Weather values: sample data</span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

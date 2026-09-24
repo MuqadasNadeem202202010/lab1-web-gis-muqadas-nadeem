@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"station_name":"Islamabad Met Station","province":"Islamabad Capital Territory","temperature":31,"rainfall":14},"geometry":{"type":"Point","coordinates":[73.0651,33.6938]}},
+    {"type":"Feature","properties":{"station_name":"Lahore Met Station","province":"Punjab","temperature":34,"rainfall":6},"geometry":{"type":"Point","coordinates":[74.3436,31.5497]}},
+    {"type":"Feature","properties":{"station_name":"Karachi Airport Station","province":"Sindh","temperature":32,"rainfall":2},"geometry":{"type":"Point","coordinates":[67.1608,24.9065]}},
+    {"type":"Feature","properties":{"station_name":"Peshawar Met Station","province":"Khyber Pakhtunkhwa","temperature":33,"rainfall":4},"geometry":{"type":"Point","coordinates":[71.5785,34.008]}},
+    {"type":"Feature","properties":{"station_name":"Quetta Met Station","province":"Balochistan","temperature":26,"rainfall":1},"geometry":{"type":"Point","coordinates":[67.01,30.195]}},
+    {"type":"Feature","properties":{"station_name":"Gilgit Met Station","province":"Gilgit-Baltistan","temperature":24,"rainfall":2},"geometry":{"type":"Point","coordinates":[74.314,35.9187]}},
+    {"type":"Feature","properties":{"station_name":"Skardu Met Station","province":"Gilgit-Baltistan","temperature":19,"rainfall":3},"geometry":{"type":"Point","coordinates":[75.536,35.3355]}},
+    {"type":"Feature","properties":{"station_name":"Chitral Met Station","province":"Khyber Pakhtunkhwa","temperature":23,"rainfall":5},"geometry":{"type":"Point","coordinates":[71.7864,35.8518]}},
+    {"type":"Feature","properties":{"station_name":"Murree Met Station","province":"Punjab","temperature":20,"rainfall":32},"geometry":{"type":"Point","coordinates":[73.3943,33.907]}},
+    {"type":"Feature","properties":{"station_name":"Multan Met Station","province":"Punjab","temperature":36,"rainfall":3},"geometry":{"type":"Point","coordinates":[71.4711,30.1978]}},
+    {"type":"Feature","properties":{"station_name":"Jacobabad Met Station","province":"Sindh","temperature":38,"rainfall":0},"geometry":{"type":"Point","coordinates":[68.4514,28.2769]}},
+    {"type":"Feature","properties":{"station_name":"Gwadar Met Station","province":"Balochistan","temperature":33,"rainfall":1},"geometry":{"type":"Point","coordinates":[62.3254,25.1216]}},
+    {"type":"Feature","properties":{"station_name":"Faisalabad Met Station","province":"Punjab","temperature":35,"rainfall":5},"geometry":{"type":"Point","coordinates":[73.079,31.418]}},
+    {"type":"Feature","properties":{"station_name":"Sialkot Met Station","province":"Punjab","temperature":32,"rainfall":20},"geometry":{"type":"Point","coordinates":[74.53,32.49]}},
+    {"type":"Feature","properties":{"station_name":"Bahawalpur Met Station","province":"Punjab","temperature":37,"rainfall":1},"geometry":{"type":"Point","coordinates":[71.6836,29.3956]}},
+    {"type":"Feature","properties":{"station_name":"Muzaffarabad Met Station","province":"Azad Jammu and Kashmir","temperature":29,"rainfall":26},"geometry":{"type":"Point","coordinates":[73.472,34.359]}}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Islamabad","province":"Islamabad Capital Territory","type":"Federal Capital"},"geometry":{"type":"Point","coordinates":[73.0479,33.6844]}},
+    {"type":"Feature","properties":{"name":"Lahore","province":"Punjab","type":"Provincial Capital"},"geometry":{"type":"Point","coordinates":[74.3587,31.5204]}},
+    {"type":"Feature","properties":{"name":"Karachi","province":"Sindh","type":"Provincial Capital"},"geometry":{"type":"Point","coordinates":[67.0011,24.8607]}},
+    {"type":"Feature","properties":{"name":"Peshawar","province":"Khyber Pakhtunkhwa","type":"Provincial Capital"},"geometry":{"type":"Point","coordinates":[71.5249,34.0151]}},
+    {"type":"Feature","properties":{"name":"Quetta","province":"Balochistan","type":"Provincial Capital"},"geometry":{"type":"Point","coordinates":[66.975,30.1798]}},
+    {"type":"Feature","properties":{"name":"Gilgit","province":"Gilgit-Baltistan","type":"Regional Capital"},"geometry":{"type":"Point","coordinates":[74.308,35.9208]}},
+    {"type":"Feature","properties":{"name":"Muzaffarabad","province":"Azad Jammu and Kashmir","type":"Regional Capital"},"geometry":{"type":"Point","coordinates":[73.4711,34.37]}},
+    {"type":"Feature","properties":{"name":"Rawalpindi","province":"Punjab","type":"Major City"},"geometry":{"type":"Point","coordinates":[73.0169,33.5651]}},
+    {"type":"Feature","properties":{"name":"Faisalabad","province":"Punjab","type":"Industrial City"},"geometry":{"type":"Point","coordinates":[73.079,31.4504]}},
+    {"type":"Feature","properties":{"name":"Multan","province":"Punjab","type":"Major City"},"geometry":{"type":"Point","coordinates":[71.4753,30.1575]}},
+    {"type":"Feature","properties":{"name":"Sialkot","province":"Punjab","type":"Industrial City"},"geometry":{"type":"Point","coordinates":[74.5229,32.4945]}},
+    {"type":"Feature","properties":{"name":"Hyderabad","province":"Sindh","type":"Major City"},"geometry":{"type":"Point","coordinates":[68.3737,25.396]}},
+    {"type":"Feature","properties":{"name":"Sukkur","province":"Sindh","type":"Major City"},"geometry":{"type":"Point","coordinates":[68.8228,27.7052]}},
+    {"type":"Feature","properties":{"name":"Gwadar","province":"Balochistan","type":"Port City"},"geometry":{"type":"Point","coordinates":[62.3225,25.1264]}},
+    {"type":"Feature","properties":{"name":"Abbottabad","province":"Khyber Pakhtunkhwa","type":"Hill Station"},"geometry":{"type":"Point","coordinates":[73.2215,34.1688]}},
+    {"type":"Feature","properties":{"name":"Skardu","province":"Gilgit-Baltistan","type":"Tourism Hub"},"geometry":{"type":"Point","coordinates":[75.6372,35.2971]}}
+  ]
+}
