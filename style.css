@@ -110,7 +110,7 @@ button{font:inherit;font-weight:700;cursor:pointer}
   .brand p{display:none}
   .layout{display:block;position:relative;overflow:hidden}
   .map-wrap{position:absolute;inset:0}
-  .panel{position:absolute;z-index:1000;top:0;left:0;right:0;max-height:80%;transform:translateY(-105%);visibility:hidden;transition:transform .3s,visibility .3s;border-right:0;border-bottom:3px solid var(--teal);box-shadow:0 12px 24px rgba(0,0,0,.25)}
+  .panel{position:absolute;z-index:1200;top:0;left:0;right:0;max-height:80%;transform:translateY(-105%);visibility:hidden;transition:transform .3s,visibility .3s;border-right:0;border-bottom:3px solid var(--teal);box-shadow:0 12px 24px rgba(0,0,0,.25)}
   .panel.open{transform:none;visibility:visible}
   .app-footer{justify-content:center;text-align:center}
   .app-footer span:nth-child(n+2){display:none}
